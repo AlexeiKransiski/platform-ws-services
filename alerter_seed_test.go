@@ -11,6 +11,11 @@ func TestAlerterSetup(t *testing.T) {
 	seedAlerts(t)
 }
 
+
+
+
+
+
 func seedAlerts(t *testing.T) {
 	alerter, err := NewAlerter(*redisUrl, *redisPassword)
 	if err != nil {
